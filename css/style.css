@@ -25,14 +25,14 @@ header > div > h2 {
 }
 
 #app {
-    margin: 0 30px;
+    margin: 0 20px;
 }
 
 .content_form {
     border-radius: 10px;
     padding: 15px;
     width: 30%;
-    margin-top: 20px;
+    margin: 20px 0;
     background-color: rgb(99, 99, 255);
     color: white;
 }
@@ -70,3 +70,17 @@ input {
     box-shadow: 0 0 15px rgb(57, 57, 255);
 }
 
+.board {
+    display: flex;
+    gap: 15px;
+}
+
+.column {
+    background-color: rgb(99, 99, 255);
+    width: 100%;
+}
+
+.column > h2 {
+    color: white;
+    text-align: center;
+}
