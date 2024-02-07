@@ -108,7 +108,7 @@ Vue.component('task', {
       <div class="task" draggable="true" @dragstart="handleDragStart" @dragover="handleDragOver" @dragend="handleDragEnd">
         <span>Создано: {{ task.createdDate }}</span>
         <h3>{{ task.title }}</h3>
-        <p v-if="!editingDescription">{{ task.description }}</p>
+        <p v-if="!editingDescription">{{ task.description }}</p><br>
         <textarea v-model="editedDescription" v-if="editingDescription"></textarea>
         <span v-if="task.lastEdited">Отредактировано: {{ task.lastEdited }}</span><br><br>
         <span>Срок сдачи: {{ task.deadline }}</span><br><br>
