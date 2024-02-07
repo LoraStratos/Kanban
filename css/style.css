@@ -109,6 +109,7 @@ input {
     border-radius: 5px;
     font-size: 14px;
     padding: 3px 10px;
+    margin-bottom: 10px;
 }
 
 .task > button:hover {
@@ -117,7 +118,6 @@ input {
 }
 
 .task > textarea {
-    margin-top: 10px;
     border: solid rgb(57, 57, 255) 1px;
     max-width: 300px;
     max-height: 60px;

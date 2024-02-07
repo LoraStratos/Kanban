@@ -112,6 +112,8 @@ Vue.component('task', {
         <textarea v-model="editedDescription" v-if="editingDescription"></textarea>
         <span v-if="task.lastEdited">Отредактировано: {{ task.lastEdited }}</span><br><br>
         <span>Срок сдачи: {{ task.deadline }}</span><br><br>
+        <button v-if="type === 'plan'" @click="handleDeleteTask">Удалить</button>
+        <button v-if="type !== 'completed'" @click="handleEditDescription">{{ editingDescription ? 'Сохранить' : 'Редактировать' }}</button>
         <button v-if="type === 'plan'" @click="handleMoveTask">Вперёд</button>
         <button v-if="type === 'work'" @click="handleMoveToNext">Вперёд</button>
         <button v-if="type === 'testing'" @click="handleReturnToPrevious">Откат</button>
