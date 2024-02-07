@@ -129,7 +129,7 @@ Vue.component('task-column', {
     props: ['title', 'tasks', 'type'],
     template: `
     <div class="column">
-        <h2 class="title_column">{{ title }}</h2>
+        <h3>{{ title }}</h3>
         <task v-for="task in sortedTasks"  :key="task.id" :task="task" :type="type" @delete="handleDeleteTask" @move="moveTask" @move-to-next="moveToNext" @return="returnTask" @complete="completeTask"></task>
     </div>
     `,
